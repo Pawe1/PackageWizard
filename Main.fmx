@@ -2,8 +2,8 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = 'Form1'
-  ClientHeight = 480
-  ClientWidth = 640
+  ClientHeight = 599
+  ClientWidth = 688
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
@@ -13,27 +13,29 @@ object Form1: TForm1
     Position.Y = 8.000000000000000000
     TabOrder = 1
     Text = 'Open'
+    OnClick = Button1Click
   end
   object Button2: TButton
     Position.X = 96.000000000000000000
     Position.Y = 8.000000000000000000
     TabOrder = 2
     Text = 'Save'
+    OnClick = Button2Click
   end
   object TabControl1: TTabControl
     Position.X = 8.000000000000000000
     Position.Y = 40.000000000000000000
-    Size.Width = 625.000000000000000000
-    Size.Height = 433.000000000000000000
+    Size.Width = 641.000000000000000000
+    Size.Height = 545.000000000000000000
     Size.PlatformDefault = False
     TabIndex = 0
     TabOrder = 3
     TabPosition = PlatformDefault
     Sizes = (
-      625s
-      405s
-      625s
-      405s)
+      641s
+      517s
+      641s
+      517s)
     object TabItem1: TTabItem
       CustomIcon = <
         item
@@ -45,6 +47,214 @@ object Form1: TForm1
       StyleLookup = ''
       TabOrder = 0
       Text = 'Info'
+      ExplicitSize.cx = 46.000000000000000000
+      ExplicitSize.cy = 28.000000000000000000
+      object Button3: TButton
+        Position.X = 336.000000000000000000
+        Position.Y = 12.000000000000000000
+        Size.Width = 129.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Import project GUID'
+        OnClick = Button3Click
+      end
+      object Edit2: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 5
+        Position.X = 72.000000000000000000
+        Position.Y = 36.000000000000000000
+        Size.Width = 257.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Edit3: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 4
+        Position.X = 72.000000000000000000
+        Position.Y = 60.000000000000000000
+        Size.Width = 257.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Edit4: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 3
+        Position.X = 72.000000000000000000
+        Position.Y = 108.000000000000000000
+        Size.Width = 257.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object ComboEdit1: TComboEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 6
+        ItemHeight = 19.000000000000000000
+        ItemIndex = -1
+        Position.X = 72.000000000000000000
+        Position.Y = 84.000000000000000000
+        Size.Width = 257.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object GroupBox1: TGroupBox
+        Position.X = 472.000000000000000000
+        Position.Y = 12.000000000000000000
+        Size.Width = 153.000000000000000000
+        Size.Height = 181.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Platforms'
+        TabOrder = 7
+        object CheckBox1: TCheckBox
+          Position.X = 16.000000000000000000
+          Position.Y = 24.000000000000000000
+          TabOrder = 6
+          Text = '32-bit Windows'
+        end
+        object CheckBox2: TCheckBox
+          Position.X = 16.000000000000000000
+          Position.Y = 40.000000000000000000
+          TabOrder = 7
+          Text = '64-bit Windows'
+        end
+        object CheckBox3: TCheckBox
+          Position.X = 16.000000000000000000
+          Position.Y = 64.000000000000000000
+          TabOrder = 5
+          Text = 'OS X'
+        end
+        object CheckBox4: TCheckBox
+          Position.X = 16.000000000000000000
+          Position.Y = 88.000000000000000000
+          TabOrder = 4
+          Text = 'Android'
+        end
+        object CheckBox5: TCheckBox
+          Position.X = 16.000000000000000000
+          Position.Y = 112.000000000000000000
+          TabOrder = 3
+          Text = 'iOS Device - 32 bit'
+        end
+        object CheckBox6: TCheckBox
+          Position.X = 16.000000000000000000
+          Position.Y = 128.000000000000000000
+          TabOrder = 2
+          Text = 'iOS Device - 64 bit'
+        end
+        object CheckBox7: TCheckBox
+          Position.X = 16.000000000000000000
+          Position.Y = 152.000000000000000000
+          TabOrder = 1
+          Text = '64-bit Linux'
+        end
+      end
+      object ComboBox1: TComboBox
+        Items.Strings = (
+          '2'
+          '3'
+          '3'
+          '4'
+          '5'
+          '6'
+          '7'
+          '8'
+          '2005'
+          '2006'
+          '2007'
+          '2009'
+          '2010'
+          'XE'
+          'XE2'
+          'XE3'
+          'XE4'
+          'XE5'
+          'XE6'
+          'XE7'
+          'XE8'
+          'Seattle'
+          'Berlin'
+          'Tokyo')
+        ItemIndex = 0
+        Position.X = 96.000000000000000000
+        Position.Y = 188.000000000000000000
+        TabOrder = 11
+      end
+      object ComboBox2: TComboBox
+        Position.X = 96.000000000000000000
+        Position.Y = 212.000000000000000000
+        TabOrder = 10
+      end
+      object ComboBox3: TComboBox
+        Position.X = 96.000000000000000000
+        Position.Y = 236.000000000000000000
+        TabOrder = 9
+      end
+      object ComboBox4: TComboBox
+        Position.X = 96.000000000000000000
+        Position.Y = 260.000000000000000000
+        TabOrder = 8
+      end
+      object Edit5: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 2
+        Position.X = 72.000000000000000000
+        Position.Y = 308.000000000000000000
+        Size.Width = 257.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Edit6: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 1
+        Position.X = 72.000000000000000000
+        Position.Y = 332.000000000000000000
+        Size.Width = 257.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object GroupBox2: TGroupBox
+        Position.X = 320.000000000000000000
+        Position.Y = 292.000000000000000000
+        Size.Width = 297.000000000000000000
+        Size.Height = 189.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Dependencies'
+        TabOrder = 12
+        object ListView1: TListView
+          ItemAppearanceClassName = 'TListItemAppearance'
+          ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+          HeaderAppearanceClassName = 'TListHeaderObjects'
+          FooterAppearanceClassName = 'TListHeaderObjects'
+          Position.X = 8.000000000000000000
+          Position.Y = 20.000000000000000000
+          Size.Width = 193.000000000000000000
+          Size.Height = 117.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 12
+        end
+        object SpeedButton1: TSpeedButton
+          Position.X = 264.000000000000000000
+          Position.Y = 16.000000000000000000
+          Size.Width = 25.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = '+'
+        end
+        object SpeedButton2: TSpeedButton
+          Position.X = 264.000000000000000000
+          Position.Y = 40.000000000000000000
+          Size.Width = 25.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = '-'
+        end
+      end
+      object Label1: TLabel
+        Position.X = 8.000000000000000000
+        Position.Y = 12.000000000000000000
+        Text = 'Label1'
+        TabOrder = 13
+      end
     end
     object TabItem2: TTabItem
       CustomIcon = <
@@ -57,6 +267,41 @@ object Form1: TForm1
       StyleLookup = ''
       TabOrder = 0
       Text = 'Install'
+      ExplicitSize.cx = 56.000000000000000000
+      ExplicitSize.cy = 28.000000000000000000
     end
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 5
+    Position.X = 80.000000000000000000
+    Position.Y = 80.000000000000000000
+    Size.Width = 257.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object ImageList1: TImageList
+    Source = <>
+    Destination = <>
+    Left = 416
+    Top = 152
+  end
+  object ImageList2: TImageList
+    Source = <>
+    Destination = <>
+    Left = 248
+    Top = 272
+  end
+  object OpenDialog: TOpenDialog
+    Left = 200
+    Top = 16
+  end
+  object SaveDialog: TSaveDialog
+    Left = 280
+    Top = 16
+  end
+  object OpenProjectDialog: TOpenDialog
+    Left = 440
+    Top = 24
   end
 end
